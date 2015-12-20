@@ -12,8 +12,9 @@ function config($stateProvider, $urlRouterProvider) {
     .state('tab.discover', {
       url: '/discover',
       views: {
-        'tab-chats': {
-          templateUrl: 'client/templates/discover.html'
+        'tab-discover': {
+          templateUrl: 'client/templates/discover.html',
+          controller: 'DiscoverCtrl'
         }
       }
     });
