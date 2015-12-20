@@ -1,5 +1,5 @@
 angular
-  .module('Whatsapp')
+  .module('ArtSmart')
   .config(config);
  
 function config($stateProvider, $urlRouterProvider) {
@@ -9,14 +9,14 @@ function config($stateProvider, $urlRouterProvider) {
       abstract: true,
       templateUrl: 'client/templates/tabs.html'
     })
-    .state('tab.chats', {
-      url: '/chats',
+    .state('tab.discover', {
+      url: '/discover',
       views: {
         'tab-chats': {
-          templateUrl: 'client/templates/chats.html'
+          templateUrl: 'client/templates/discover.html'
         }
       }
     });
  
-  $urlRouterProvider.otherwise('tab/chats');
+  $urlRouterProvider.otherwise('tab/discover');
 }

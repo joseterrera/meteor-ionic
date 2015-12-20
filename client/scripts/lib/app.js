@@ -1,5 +1,5 @@
 angular
-  .module('Whatsapp', [
+  .module('ArtSmart', [
     'angular-meteor',
     'ionic'
   ]);
@@ -12,5 +12,5 @@ else {
 }
 
 function onReady() {
-  angular.bootstrap(document, ['Whatsapp']);
+  angular.bootstrap(document, ['ArtSmart']);
 }
